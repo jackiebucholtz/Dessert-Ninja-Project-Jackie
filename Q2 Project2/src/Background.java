@@ -14,12 +14,11 @@ public class Background{
 	private AffineTransform tx;
 
 	public Background(int x, int y) {
-		img = getImage("/imgs/bg.png"); //load the image for Tree
+		img = getImage("/imgs/fruitNinjabg.png"); //load the image for Tree
 		tx = AffineTransform.getTranslateInstance(x, y );
 		init(x, y); 				//initialize the location of the image
 									//use your variables
 	}
-
 	
 	/* update variables here */
 	private void update() {
@@ -49,7 +48,7 @@ public class Background{
 	
 	private void init(double a, double b) {
 		tx.setToTranslation(a, b);
-		tx.scale(2.7, 2.5);
+		tx.scale(1.5, 1.5);
 	}
 
 	private Image getImage(String path) {

@@ -16,12 +16,15 @@ import javax.swing.Timer;
 public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener {
 	
 	//CREATE THE OBJECT (STEP 1)
-	Background 	bg 	= new Background(0, 0);
+	Background 	bg 	= new Background(0, 0);	
+	Cookie2 ck = new Cookie2 (0, 0);
 
 
 	public void paint(Graphics g) {
 		super.paintComponent(g);
 		bg.paint(g);
+		ck.paint(g);
+		//IceCream.paint(g);
 
 		
 	}
@@ -31,7 +34,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	}
 	
 	public Frame() {
-		JFrame f = new JFrame("Crossy Street");
+		JFrame f = new JFrame("Wood Background");
 		f.setSize(new Dimension(600, 400));
 		f.setBackground(Color.blue);
 		f.add(this);

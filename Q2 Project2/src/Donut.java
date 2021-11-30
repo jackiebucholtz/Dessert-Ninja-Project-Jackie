@@ -1,8 +1,9 @@
 
 public class Donut {
-	
-	public Donut () {
-		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
