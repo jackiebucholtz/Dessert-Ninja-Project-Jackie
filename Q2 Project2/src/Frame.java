@@ -16,14 +16,32 @@ import javax.swing.Timer;
 public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener {
 	
 	//CREATE THE OBJECT (STEP 1)
+	private int xMax = 500;
+	private int yMax = 200;
+	private int xMin = 0;
+	private int yMin = 0;
+	private int xr = (int) ((Math.random() * (xMax - xMin)) + xMin);
+	private int yr = (int) ((Math.random() * (yMax - yMin)) + yMin);
+	private int xr1 = (int) ((Math.random() * (xMax - xMin)) + xMin);
+	private int yr1 = (int) ((Math.random() * (yMax - yMin)) + yMin);
+	private int xr2 = (int) ((Math.random() * (xMax - xMin)) + xMin);
+	private int yr2 = (int) ((Math.random() * (yMax - yMin)) + yMin);
+	private int xr3 = (int) ((Math.random() * (xMax - xMin)) + xMin);
+	private int yr3 = (int) ((Math.random() * (yMax - yMin)) + yMin);
 	Background 	bg 	= new Background(0, 0);	
-	Cookie2 ck = new Cookie2 (0, 0);
+	Cookie2 ck = new Cookie2 (xr, yr);
+	Donut dt = new Donut(xr1, yr1);
+	Cupcake cp = new Cupcake(xr2, yr2);
+	Broccoli bc = new Broccoli(xr3, yr3);
 
 
 	public void paint(Graphics g) {
 		super.paintComponent(g);
 		bg.paint(g);
 		ck.paint(g);
+		dt.paint(g);
+		cp.paint(g);
+		bc.paint(g);
 		//IceCream.paint(g);
 
 		
