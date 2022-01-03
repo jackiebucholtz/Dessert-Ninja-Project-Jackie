@@ -17,9 +17,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	
 	//CREATE THE OBJECT (STEP 1)
 	private int xMax = 500;
-	private int yMax = 200;
+	private int yMax = 400;
 	private int xMin = 0;
-	private int yMin = 0;
+	private int yMin = 200;
 	private int xr = (int) ((Math.random() * (xMax - xMin)) + xMin);
 	private int yr = (int) ((Math.random() * (yMax - yMin)) + yMin);
 	private int xr1 = (int) ((Math.random() * (xMax - xMin)) + xMin);
@@ -43,6 +43,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		cp.paint(g);
 		bc.paint(g);
 		//IceCream.paint(g);
+		
 
 		
 	}
@@ -69,6 +70,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
+		
 
 	}
 
