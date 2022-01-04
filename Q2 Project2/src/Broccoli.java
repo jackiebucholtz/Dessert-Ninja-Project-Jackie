@@ -22,6 +22,8 @@ public class Broccoli{
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
+	public int subScore = 0;
+
 	Rectangle rBroc = new Rectangle(x+27, y+30, width+15, height+30);
 
 

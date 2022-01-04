@@ -12,6 +12,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import java.awt.Font;
 
 public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener {
 	
@@ -20,8 +21,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	private int yMax = 400;
 	private int xMin = 0;
 	private int yMin = 200;
-	private int mx;
-	private int my;
+	public int mx;
+	public int my;
+	private int score = 0;
 	private int xr = (int) ((Math.random() * (xMax - xMin)) + xMin);
 	private int yr = (int) ((Math.random() * (yMax - yMin)) + yMin);
 	private int xr1 = (int) ((Math.random() * (xMax - xMin)) + xMin);
@@ -47,7 +49,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		//IceCream.paint(g);
 		
 		
-		
+		g.setColor(Color.white);
+		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
+		g.drawString("" + score, 20, 50);
 
 		
 	}

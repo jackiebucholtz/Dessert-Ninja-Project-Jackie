@@ -22,6 +22,8 @@ public class Donut{
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
+	public int addScore = 0;
+
 	Rectangle rDon = new Rectangle(x+20, y+20, width+15, height+10);
 
 	public Donut (int x, int y) {

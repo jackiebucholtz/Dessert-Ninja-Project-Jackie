@@ -22,6 +22,7 @@ public class Cupcake{
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
+	public int addScore = 0;
 	Rectangle rCup = new Rectangle(x+40, y+45, width+10, height+25);
 
 

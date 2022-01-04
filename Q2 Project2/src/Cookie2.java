@@ -1,3 +1,4 @@
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -22,6 +23,9 @@ public class Cookie2{
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
+	public int addScore = 0;
+
+	Frame f = new Frame();
 	Rectangle rCook = new Rectangle(x+43, y+50, width+15, height+15);
 
 
@@ -49,7 +53,6 @@ public class Cookie2{
 		
 		//call update to update the actually picture location
 		update();
-		
 		
 		
 		
