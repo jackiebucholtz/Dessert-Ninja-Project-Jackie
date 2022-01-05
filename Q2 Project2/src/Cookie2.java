@@ -24,11 +24,23 @@ public class Cookie2{
 	public int width = 50;
 	public int height = 50;
 	public int addScore = 0;
+	private Rectangle cookBoundary;
+
 
 	Frame f = new Frame();
-	Rectangle rCook = new Rectangle(x+43, y+50, width+15, height+15);
+	//Rectangle rCook = new Rectangle(x+43, y+50, width+15, height+15);
 
-
+	public boolean ifCookClicked (int x, int y) {
+		Rectangle rCook = new Rectangle(x, y, 10, 10);
+		cookBoundary = new Rectangle(this.x+40, this.y+45, width+10, height+25);
+		if(cookBoundary.intersects(rCook)) {
+			System.out.println("in bound");
+			this.y = (int) ((Math.random()*(1000-650))+650);
+			return true;
+		}
+		return false;
+	}
+	
 	public Cookie2(int x, int y) {
 		this.x = x;
 		this.y = y;

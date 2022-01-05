@@ -9,12 +9,14 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 import java.awt.Font;
 
-public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener {
+public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener, MouseMotionListener {
 	
 	//CREATE THE OBJECT (STEP 1)
 	private int xMax = 500;
@@ -48,6 +50,29 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		bc.paint(g);
 		//IceCream.paint(g);
 		
+		if(cp.ifCupClicked(mx, my)) {
+			score++;
+			mx = 0;
+			my = 0;
+		}
+		
+		if(ck.ifCookClicked(mx, my)) {
+			score++;
+			mx = 0;
+			my = 0;
+		}
+		
+		if(dt.ifDonClicked(mx, my)) {
+			score++;
+			mx = 0;
+			my = 0;
+		}
+		
+		if(bc.ifBrocClicked(mx, my)) {
+			score--;
+			mx = 0;
+			my = 0;
+		}
 		
 		g.setColor(Color.white);
 		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
@@ -68,6 +93,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		f.setResizable(false);
 		f.setLayout(new GridLayout(1,2));
 		f.addMouseListener(this);
+		f.addMouseMotionListener(this);
 		f.addKeyListener(this);
 		Timer t = new Timer(16, this);
 		t.start();
@@ -127,6 +153,20 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	public void keyTyped(KeyEvent arg0) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public void mouseDragged(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		mx = arg0.getX()-10;
+		my = arg0.getY()-25;
+
 	}
 
 }

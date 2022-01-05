@@ -1,3 +1,4 @@
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -13,8 +14,8 @@ public class Broccoli{
 	//image related variables
 	private Image img; 	
 	private AffineTransform tx;
-	private int y;
-	private int x;
+	public int y;
+	public int x;
 	private double vy;
 	private int xMax = 500;
 	private int yMax = 400;
@@ -23,10 +24,21 @@ public class Broccoli{
 	public int width = 50;
 	public int height = 50;
 	public int subScore = 0;
+	public Rectangle brocBoundary;
 
-	Rectangle rBroc = new Rectangle(x+27, y+30, width+15, height+30);
+	//Rectangle rBroc = new Rectangle(x+27, y+30, width+15, height+30);
 
-
+	public boolean ifBrocClicked (int x, int y) {
+		Rectangle rBroc = new Rectangle(x, y, 10, 10);
+		brocBoundary = new Rectangle(this.x+40, this.y+45, width+10, height+25);
+		if(brocBoundary.intersects(rBroc)) {
+			System.out.println("in bound");
+			this.y = (int) ((Math.random()*(1000-650))+650);
+			return true;
+		}
+		return false;
+	}
+	
 	public Broccoli(int x, int y) {
 		this.x = x;
 		this.y = y;

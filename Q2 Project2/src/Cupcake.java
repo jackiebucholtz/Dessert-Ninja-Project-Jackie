@@ -23,9 +23,20 @@ public class Cupcake{
 	public int width = 50;
 	public int height = 50;
 	public int addScore = 0;
-	Rectangle rCup = new Rectangle(x+40, y+45, width+10, height+25);
+	private Rectangle cupBoundary;
+	//Rectangle rCup = new Rectangle(x+40, y+45, width+10, height+25);
 
-
+	public boolean ifCupClicked (int x, int y) {
+		Rectangle rCup = new Rectangle(x, y, 10, 10);
+		cupBoundary = new Rectangle(this.x+40, this.y+45, width+10, height+25);
+		if(cupBoundary.intersects(rCup)) {
+			System.out.println("in bound");
+			this.y = (int) ((Math.random()*(1000-650))+650);
+			return true;
+		}
+		return false;
+	}
+	
 	public Cupcake(int x, int y) {
 		this.x = x;
 		this.y = y;
