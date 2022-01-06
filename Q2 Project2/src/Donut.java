@@ -20,7 +20,7 @@ public class Donut{
 	private double vy;
 	private int xMax = 500;
 	private int yMax = 400;
-	boolean cut = false;
+	boolean slice = false;
 	private int xMin = 0;
 	private int yMin = 200;
 	public int width = 50;
@@ -36,7 +36,7 @@ public class Donut{
 		if(donBoundary.intersects(rCook)) {
 			System.out.println("in bound");
 		//	this.y = (int) ((Math.random()*(1000-650))+650);
-			cut = true; //slice
+			slice = true; //slice
 			return true;
 		}
 		return false;
@@ -72,7 +72,7 @@ public class Donut{
 		
 		
 		
-		if(cut) {
+		if(slice) {
 			tx1 = AffineTransform.getTranslateInstance(x-40, y ); //slice
 			g2.drawImage(img2, tx1, null);
 			tx2 = AffineTransform.getTranslateInstance(x+40, y ); //slice
@@ -92,8 +92,8 @@ public class Donut{
 	
 	private void update () {
 		//update y location based on velocity in y
-		if(cut) { //slice
-			vy += 5;
+		if(slice) { //slice
+			vy += 3;
 		}else {
 			vy = -3.5;
 
@@ -106,9 +106,9 @@ public class Donut{
 			//y = 10;
 			//vy = 0;
 		//}
-		if(y > 450 && cut) { //slice
+		if(y > 450 && slice) { //slice
 			vy = -3.5;
-			cut = false;
+			slice = false;
 			this.y = (int) ((Math.random()*(1000-650))+650);
 		}
 		tx.setToTranslation(x, y);

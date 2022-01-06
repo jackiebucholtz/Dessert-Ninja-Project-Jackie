@@ -26,6 +26,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	public int mx;
 	public int my;
 	private int score = 0;
+	private int counter = 0;
 	private int xr = (int) ((Math.random() * (xMax - xMin)) + xMin);
 	private int yr = (int) ((Math.random() * (yMax - yMin)) + yMin);
 	private int xr1 = (int) ((Math.random() * (xMax - xMin)) + xMin);
@@ -35,6 +36,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	private int xr3 = (int) ((Math.random() * (xMax - xMin)) + xMin);
 	private int yr3 = (int) ((Math.random() * (yMax - yMin)) + yMin);
 	Background 	bg 	= new Background(0, 0);	
+	EndScreen 	bg2 	= new EndScreen(0, 0, "imgs/explosion.gif");	 
 	Cookie2 ck = new Cookie2 (xr, yr);
 	Donut dt = new Donut(xr1, yr1);
 	Cupcake cp = new Cupcake(xr2, yr2);
@@ -50,37 +52,42 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		bc.paint(g);
 		//IceCream.paint(g);
 		
-		if(cp.ifCupClicked(mx, my)) {
+		if(!cp.slice && cp.ifCupClicked(mx, my)) {
 			score++;
 			mx = 0;
 			my = 0;
 		}
 		
-		if(ck.ifCookClicked(mx, my)) {
+		if(!ck.slice&&ck.ifCookClicked(mx, my)) {
 			score++;
 			mx = 0;
 			my = 0;
 		}
 		
-		if(dt.ifDonClicked(mx, my)) {
+		if(!dt.slice&&dt.ifDonClicked(mx, my)) {
 			score++;
 			mx = 0;
 			my = 0;
 		}
 		
 		if(bc.ifBrocClicked(mx, my)) {
-			score--;
-			mx = 0;
-			my = 0;
+			score = 0;
+			end = true;
 		}
 		
 		g.setColor(Color.white);
 		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
 		g.drawString("" + score, 20, 50);
-
+		if(end) {
+			bg2.paint(g);
+			g.setFont(new Font ("Impact", Font.PLAIN, 50));
+			g.drawString("You're Dead", 50, 100);
+			g.drawString("Click to Play Again", 50, 200);
+		}
 		
 	}
 	
+	boolean end = false;
 	public static void main(String[] arg) {
 		Frame f = new Frame();
 	}
@@ -107,6 +114,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		mx = arg0.getX()-10;
 		my = arg0.getY()-25;
 
+		if(end == true) {
+			end = false;
+		}
 	}
 
 	@Override

@@ -16,10 +16,18 @@ public class Background{
 	public Background(int x, int y) {
 		img = getImage("/imgs/fruitNinjabg.png"); //load the image for Tree
 		tx = AffineTransform.getTranslateInstance(x, y );
+		tx.scale(.5, .5);
 		init(x, y); 				//initialize the location of the image
 									//use your variables
 	}
 	
+	
+	public Background(int x, int y, String str) {
+		img = getImage(str); //load the image for Tree
+		tx = AffineTransform.getTranslateInstance(x, y );
+		init(x, y); 				//initialize the location of the image
+									//use your variables
+	}
 	/* update variables here */
 	private void update() {
 
@@ -36,11 +44,7 @@ public class Background{
 		//call update to update the actualy picture location
 		update();
 		
-		
-		
-		
 		g2.drawImage(img, tx, null);
-		
 		
 
 	}

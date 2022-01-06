@@ -13,7 +13,8 @@ public class Cookie2{
 	
 	//image related variables
 	private Image img; 	
-	private AffineTransform tx;
+	private Image img1, img2;
+	private AffineTransform tx, tx1, tx2;
 	private int y;
 	private int x;
 	private double vy;
@@ -24,6 +25,7 @@ public class Cookie2{
 	public int width = 50;
 	public int height = 50;
 	public int addScore = 0;
+	boolean slice = false;
 	private Rectangle cookBoundary;
 
 
@@ -35,7 +37,8 @@ public class Cookie2{
 		cookBoundary = new Rectangle(this.x+40, this.y+45, width+10, height+25);
 		if(cookBoundary.intersects(rCook)) {
 			System.out.println("in bound");
-			this.y = (int) ((Math.random()*(1000-650))+650);
+			//this.y = (int) ((Math.random()*(1000-650))+650);
+			slice = true;
 			return true;
 		}
 		return false;
@@ -44,7 +47,10 @@ public class Cookie2{
 	public Cookie2(int x, int y) {
 		this.x = x;
 		this.y = y;
-		img = getImage("/imgs/cookie.png"); //load the image for Tree
+		img = getImage("/imgs/cookie.png"); //load the image for cookie
+		img1 = getImage("/imgs/cookieHalf2.png"); // load the image for cookie //slice
+
+		img2 = getImage("/imgs/cookieHalf.png"); // load the image for cookie //slice
 		tx = AffineTransform.getTranslateInstance(x, y );
 		init(x, y); 				//initialize the location of the image
 									//use your variables
@@ -66,9 +72,19 @@ public class Cookie2{
 		//call update to update the actually picture location
 		update();
 		
-		
-		
-		g2.drawImage(img, tx, null);
+		if (slice) {
+			tx1 = AffineTransform.getTranslateInstance(x - 40, y); // slice
+			tx1.scale(.12, .12);
+			g2.drawImage(img2, tx1, null);
+			tx2 = AffineTransform.getTranslateInstance(x + 40, y); // slice
+			tx2.scale(.12, .12);
+
+			g2.drawImage(img1, tx2, null); // slice
+
+		} else {
+			g2.drawImage(img, tx, null); // slice
+
+		}
 		
 		g.drawRect(x+43, y+50, width+15, height+15);
 
@@ -79,8 +95,13 @@ public class Cookie2{
 	
 	private void update () {
 		//update y location based on velocity in y
-		y += vy; //velocity in y affects y location
-		vy = -3.5;
+		if (slice) { // slice
+			vy += 3;
+		} else {
+			vy = -3.5;
+
+		}
+		y += vy;
 			
 		//prevent from leaving at the top of the frame
 		//if(y < 10) {
@@ -90,6 +111,16 @@ public class Cookie2{
 		
 		tx.setToTranslation(x, y);
 		tx.scale(0.13, 0.13);
+		
+		if (y > 450 && slice) { // slice
+			vy = -3.5;
+			slice = false;
+			this.y = (int) ((Math.random() * (1000 - 650)) + 650);
+
+			tx.setToTranslation(x, y);
+			tx.scale(0.12, 0.12);
+
+		}
 		
 		if(y <= -100) {
 			y = 600;
