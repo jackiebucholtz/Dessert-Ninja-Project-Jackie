@@ -16,7 +16,8 @@ public class Cupcake {
 	private AffineTransform tx, tx1, tx2;
 	public int y;
 	public int x;
-	private double vy;
+	private double vy = -25, vx; //throw
+	private int a = 1;
 	private int xMax = 500;
 	private int yMax = 400;
 	private int xMin = 0;
@@ -27,6 +28,7 @@ public class Cupcake {
 	boolean slice = false;
 	private Rectangle cupBoundary;
 	// Rectangle rCup = new Rectangle(x+40, y+45, width+10, height+25);
+	int og = 0;
 
 	public boolean ifCupClicked(int x, int y) {
 		Rectangle rCup = new Rectangle(x, y, 10, 10);
@@ -43,6 +45,7 @@ public class Cupcake {
 	public Cupcake(int x, int y) {
 		this.x = x;
 		this.y = y;
+		og = y;
 		img = getImage("/imgs/cupcake.png"); // load the image for cupcake
 		img1 = getImage("/imgs/cupcakeHalf2.png"); // load the image for cupcake //slice
 
@@ -50,6 +53,8 @@ public class Cupcake {
 		tx = AffineTransform.getTranslateInstance(x, y);
 		init(x, y); // initialize the location of the image
 					// use your variables
+		
+		vx = (int)(Math.random()*(9))-4; //throw
 	}
 
 	/* update variables here */
@@ -62,7 +67,7 @@ public class Cupcake {
 		// these are the 2 lines of code needed draw an image on the screen
 		Graphics2D g2 = (Graphics2D) g;
 
-		// call update to update the actualy picture location
+		// call update to update the actually picture location
 		update();
 
 		if (slice) {
@@ -79,43 +84,37 @@ public class Cupcake {
 
 		}
 
-		g.drawRect(x + 40, y + 45, width + 10, height + 20); // slice
+		//g.drawRect(x + 40, y + 45, width + 10, height + 20); // slice
 
 	}
 
 	private void update() {
-		// update y location based on velocity in y
-		if (slice) { // slice
-			vy += 3;
-		} else {
-			vy = -3.5;
-
-		}
+		
+		vy += a;//-3.5;
 		y += vy;
+		x += vx;
 
-		// prevent from leaving at the top of the frame
-		// if(y < 10) {
-		// y = 10;
-		// vy = 0;
-		// }
-		tx.setToTranslation(x, y);
-		tx.scale(0.12, 0.12);
-
-		if (y > 450 && slice) { // slice
-			vy = -3.5;
-			slice = false;
-			this.y = (int) ((Math.random() * (1000 - 650)) + 650);
-
-			tx.setToTranslation(x, y);
-			tx.scale(0.12, 0.12);
-
+		if (y > 650 ) { // slice
+			reset(); //throw
 		}
 
 		if (y <= -100) {
-			y = 600;
-			x = ((int) (Math.random() * (xMax - xMin)) + xMin);
+			reset(); //throw
 		}
 
+		
+		tx.setToTranslation(x, y);
+		tx.scale(0.12, 0.12);
+		
+	}
+	
+	//added reset - throw
+	public void reset() {
+		vx = (int)(Math.random()*(9))-4;
+		y = og+50;
+		vy = -25;
+		x = ((int) (Math.random() * (xMax - xMin)) + xMin);
+		slice = false;
 	}
 
 	private void init(double a, double b) {

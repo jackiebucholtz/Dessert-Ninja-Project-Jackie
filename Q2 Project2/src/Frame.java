@@ -75,6 +75,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 			end = true;
 		}
 		
+		
+		
+		
 		g.setColor(Color.white);
 		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
 		g.drawString("" + score, 20, 50);

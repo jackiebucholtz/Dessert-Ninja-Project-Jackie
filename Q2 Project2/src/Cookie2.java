@@ -17,16 +17,18 @@ public class Cookie2{
 	private AffineTransform tx, tx1, tx2;
 	private int y;
 	private int x;
-	private double vy;
 	private int xMax = 500;
 	private int yMax = 400;
 	private int xMin = 0;
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
-	public int addScore = 0;
+	public int score = 0;
 	boolean slice = false;
 	private Rectangle cookBoundary;
+	private double vy = -25, vx; //throw
+	private int a = 1;
+	int og = 0;
 
 
 	Frame f = new Frame();
@@ -34,7 +36,7 @@ public class Cookie2{
 
 	public boolean ifCookClicked (int x, int y) {
 		Rectangle rCook = new Rectangle(x, y, 10, 10);
-		cookBoundary = new Rectangle(this.x+40, this.y+45, width+10, height+25);
+		cookBoundary = new Rectangle(this.x+20, this.y+25, width+10, height+25);
 		if(cookBoundary.intersects(rCook)) {
 			System.out.println("in bound");
 			//this.y = (int) ((Math.random()*(1000-650))+650);
@@ -47,6 +49,7 @@ public class Cookie2{
 	public Cookie2(int x, int y) {
 		this.x = x;
 		this.y = y;
+		og = y;
 		img = getImage("/imgs/cookie.png"); //load the image for cookie
 		img1 = getImage("/imgs/cookieHalf2.png"); // load the image for cookie //slice
 
@@ -73,10 +76,10 @@ public class Cookie2{
 		update();
 		
 		if (slice) {
-			tx1 = AffineTransform.getTranslateInstance(x - 40, y); // slice
+			tx1 = AffineTransform.getTranslateInstance(x - 20, y); // slice
 			tx1.scale(.12, .12);
 			g2.drawImage(img2, tx1, null);
-			tx2 = AffineTransform.getTranslateInstance(x + 40, y); // slice
+			tx2 = AffineTransform.getTranslateInstance(x + 20, y); // slice
 			tx2.scale(.12, .12);
 
 			g2.drawImage(img1, tx2, null); // slice
@@ -86,7 +89,7 @@ public class Cookie2{
 
 		}
 		
-		g.drawRect(x+43, y+50, width+15, height+15);
+		//g.drawRect(x+43, y+50, width+15, height+15);
 
 		
 		
@@ -94,38 +97,30 @@ public class Cookie2{
 	}
 	
 	private void update () {
-		//update y location based on velocity in y
-		if (slice) { // slice
-			vy += 3;
-		} else {
-			vy = -3.5;
-
-		}
+		vy += a;//-3.5;
 		y += vy;
-			
-		//prevent from leaving at the top of the frame
-		//if(y < 10) {
-			//y = 10;
-			//vy = 0;
-		//}
+		x += vx;
+
+		if (y > 650 ) { // slice
+			reset(); //throw
+		}
+
+		if (y <= -100) {
+			reset(); //throw
+		}
+
 		
 		tx.setToTranslation(x, y);
-		tx.scale(0.13, 0.13);
+		tx.scale(0.12, 0.12);
 		
-		if (y > 450 && slice) { // slice
-			vy = -3.5;
-			slice = false;
-			this.y = (int) ((Math.random() * (1000 - 650)) + 650);
-
-			tx.setToTranslation(x, y);
-			tx.scale(0.12, 0.12);
-
-		}
-		
-		if(y <= -100) {
-			y = 600;
-			x = ((int)(Math.random() * (xMax - xMin)) + xMin);
-		}
+	}
+	
+	public void reset() {
+		vx = (int)(Math.random()*(9))-4;
+		y = og+50;
+		vy = -25;
+		x = ((int) (Math.random() * (xMax - xMin)) + xMin);
+		slice = false;
 	}
 
 	

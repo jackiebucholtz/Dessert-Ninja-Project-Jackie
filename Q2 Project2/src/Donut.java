@@ -17,16 +17,18 @@ public class Donut{
 	private AffineTransform tx, tx1, tx2;
 	private int y;
 	private int x;
-	private double vy;
-	private int xMax = 500;
+	private int xMax = 400;
 	private int yMax = 400;
 	boolean slice = false;
 	private int xMin = 0;
 	private int yMin = 200;
 	public int width = 50;
 	public int height = 50;
-	public int addScore = 0;
+	public int score = 0;
 	public Rectangle donBoundary;
+	private double vy = -25, vx; //throw
+	private int a = 1;
+	int og = 0;
 
 	//Rectangle rDon = new Rectangle(x+20, y+20, width+15, height+10);
 
@@ -45,6 +47,7 @@ public class Donut{
 	public Donut (int x, int y) {
 		this.x = x;
 		this.y = y;
+		og = y;
 		img = getImage("/imgs/donut.png"); //load the image for Tree
 		img1 = getImage("/imgs/donutHalf2.png"); //load the image for Tree //slice
 
@@ -84,40 +87,39 @@ public class Donut{
 
 		}
 		
-		g.drawRect(x+20, y+20, width+15, height+10); //slice
+		//g.drawRect(x+20, y+20, width+15, height+10); //slice
 
 		
 
 	}
 	
 	private void update () {
-		//update y location based on velocity in y
-		if(slice) { //slice
-			vy += 3;
-		}else {
-			vy = -3.5;
+		vy += a;//-3.5;
+		y += vy;
+		x += vx;
 
+		if (y > 650 ) { // slice
+			reset(); //throw
 		}
-		y += vy; //velocity in y affects y location
-			
-	
-		//prevent from leaving at the top of the frame
-		//if(y < 10) {
-			//y = 10;
-			//vy = 0;
-		//}
-		if(y > 450 && slice) { //slice
-			vy = -3.5;
-			slice = false;
-			this.y = (int) ((Math.random()*(1000-650))+650);
+
+		if (y <= -100) {
+			reset(); //throw
 		}
-		tx.setToTranslation(x, y);
-		tx.scale(1.0, 1.0);
+
 		
-		if(y <= -100) {
-			y = 600;
-			x = ((int)(Math.random() * (xMax - xMin)) + xMin);
+		tx.setToTranslation(x, y);
+	}
+	
+	public void reset() {
+		
+		if(!slice && y > 650) {
+			score--;
 		}
+		vx = (int)(Math.random()*(9))-4;
+		y = og+50;
+		vy = -25;
+		x = ((int) (Math.random() * (xMax - xMin)) + xMin);
+		slice = false;
 	}
 
 	
