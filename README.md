@@ -3,7 +3,7 @@
 Hello this is our perfect, awesome, and cool project. It is a spin off of Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. In Dessert Ninja, you are collecting all of the delectable sweets. Refrain from the demise of the broccoli.
 
 ## How to Play
-In order to play Dessert Ninja, you must swipe your mouse across the donut, cupcake, and cookie to gain points. Clicking on the broccoli equates to an explosion and loss. But do not fear, you are welcome to click the screen and play again!
+In order to play Dessert Ninja, you must swipe your mouse across the donut, cupcake, and cookie to gain points. Slicing the broccoli equates to an explosion and loss. But do not fear, you are welcome to click the screen and play again!
 
 ## Our Code
 
