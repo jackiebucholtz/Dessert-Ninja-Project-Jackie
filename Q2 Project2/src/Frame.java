@@ -42,7 +42,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	Cupcake cp = new Cupcake(xr2, yr2);
 	Broccoli bc = new Broccoli(xr3, yr3);
 
-
+	
 	public void paint(Graphics g) {
 		super.paintComponent(g);
 		bg.paint(g);
@@ -77,7 +77,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		
 		
 		
-		
+		//make text
 		g.setColor(Color.white);
 		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
 		g.drawString("" + score, 20, 50);
