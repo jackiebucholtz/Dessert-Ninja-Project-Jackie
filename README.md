@@ -53,7 +53,7 @@ One background class was created to duplicate the background from the original f
 ### Creating Objects:
 
 ## Unique Features of Our Game  
-In the original game, an explosion occurs when you click on the bomb instead of the fruit. When the broccoli is clicked in Dessert Ninja, a gif of Danny Devito walking from an exploding building appears as money falls down from the sky above. Here is a reference to the legend himself below: 
+In the original game, an explosion occurs when you slice the bomb instead of the fruit. When the broccoli is sliced in Dessert Ninja, a gif of Danny Devito walking from an explosion appears as money falls down from the sky above. Here is a reference to the legend himself below: 
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
 
