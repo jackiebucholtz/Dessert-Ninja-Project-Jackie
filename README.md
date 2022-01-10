@@ -16,11 +16,46 @@ Swipe the mouse across objects.
 When end screen appears, click mouse to start again.
 
 ## Classes
+### Donut Class:
+This class is for the donut object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
+
+![Screen_Shot_2022-01-10_at_12 27 07_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148835097-0fe97ab7-3e77-4bb4-a37c-69b050882f72.png)
+
+### Cupcake Class:
+This class is for the cupcake object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
+
+![Screen_Shot_2022-01-10_at_12 27 18_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838570-f3a8345b-053e-461c-969c-73d7577a4dc2.png)
+
+### Cookie Class:
+This class is for the cookie object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
+
+![Screen_Shot_2022-01-10_at_12 26 38_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838632-9c285279-4c8c-422d-9422-900f497c8e47.png)
+
+### Broccoli Class:
+This class is for the broccoli object which if you slice through you lose the game. It was made from Pixilart with our amazing artistic skills. 
+
+![Screen_Shot_2022-01-10_at_12 26 29_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838762-44f5ba19-b267-41d1-bd33-f6037e9b423c.png)
+
+### Background Class:
+One background class was created to duplicate the background from the original fruit ninja game.
+
+![background class](https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg)
 
 ## Our Code
+### Paint Method:
 
+### Collision:
+
+### Scoring:
+
+### Game Over:
+
+### Creating Objects:
 
 ## Unique Features of Our Game  
 In the original game, an explosion occurs when you click on the bomb instead of the fruit. When the broccoli is clicked in Dessert Ninja, a gif of Danny Devito walking from an exploding building appears as money falls down from the sky above. Here is a reference to the legend himself below: 
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
+
+# THANK YOU!
+(insert throwback photos here)
