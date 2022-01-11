@@ -65,7 +65,7 @@ This code ensures that if a dessert is not already hovered over, then it will be
 
 
 ### Collision:
-In all of our dessert classes, we have a similar area of code like the one below. For this cupcake class, if our mouse hovers over the hitbox area, then the cupcake gets sliced. The same goes for all other objects.
+In all of our dessert classes, we have a similar area of code like the one below. For this cupcake class, if our mouse hovers over the hitbox area, then the cupcake gets sliced. The same goes for all other objects. It is called in the frame class under scoring as we can see above.
 
 <img width="629" alt="Screen Shot 2022-01-11 at 12 01 08 PM" src="https://user-images.githubusercontent.com/90801629/149012849-3030f7c8-f676-4bd1-830d-a463a40006bf.png">
 
