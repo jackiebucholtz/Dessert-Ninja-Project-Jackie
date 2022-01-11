@@ -41,16 +41,21 @@ One background class was created to duplicate the background from the original f
 
 ![background class](https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg)
 
-## Our Code
+# Our Code
+## Frame:
+
+### Creating Objects:
+This is where we create our objects that are displayed during the game. The wood background, danny devito gif, donut, cupcake, cookie, and broccoli.
+
+![creating objects](https://user-images.githubusercontent.com/70665580/148995453-d45a88e4-74f5-4281-9e6b-4f09b0e92870.png)
+
 ### Paint Method:
+
+#### Scoring:
 
 ### Collision:
 
-### Scoring:
-
 ### Game Over:
-
-### Creating Objects:
 
 ## Unique Features of Our Game  
 In the original game, an explosion occurs when you slice the bomb instead of the fruit. When the broccoli is sliced in Dessert Ninja, a gif of Danny Devito walking from an explosion appears as money falls down from the sky above. Here is a reference to the legend himself below: 
