@@ -8,7 +8,7 @@ Hello this is our perfect, awesome, and cool project. It is a spin off of Fruit 
 
 
 ## How to Play
-In order to play Dessert Ninja, you must swipe your mouse across the donut, cupcake, and cookie to gain points. Slicing the broccoli equates to an explosion and loss. But do not fear, you are welcome to click the screen and play again!
+In order to play Dessert Ninja, you must swipe your mouse across the donut, cupcake, and/or cookie to gain points. Slicing the broccoli equates to an explosion and loss. But do not fear, you are welcome to click the screen and play again!
 
 ### Usage:
 Swipe the mouse across objects.
@@ -50,12 +50,28 @@ This is where we create our objects that are displayed during the game. The wood
 ![creating objects](https://user-images.githubusercontent.com/70665580/148995453-d45a88e4-74f5-4281-9e6b-4f09b0e92870.png)
 
 ### Paint Method:
+This method calls the objects into display. 
+
+<img width="322" alt="Screen Shot 2022-01-11 at 12 12 57 PM" src="https://user-images.githubusercontent.com/90801629/149014378-897e08bb-ddd6-4ff5-8ef1-a7a4114ef084.png">
+
 
 #### Scoring:
+This code ensures that if a dessert is not already hovered over, then it will be sliced and the point will increase by one. Hovering over the broccoli, however, does not increase your score. Instead, the score resets to zero and the End Screen appears. 
+
+<img width="724" alt="Screen Shot 2022-01-11 at 12 14 08 PM" src="https://user-images.githubusercontent.com/90801629/149014673-9d790fc5-62fa-437e-b6a6-ad85307b1e29.png">
+
 
 ### Collision:
+In all of our dessert classes, we have a similar area of code like the one below. For this cupcake class, if our mouse hovers over the hitbox area, then the cupcake gets sliced. The same goes for all other objects.
+
+<img width="629" alt="Screen Shot 2022-01-11 at 12 01 08 PM" src="https://user-images.githubusercontent.com/90801629/149012849-3030f7c8-f676-4bd1-830d-a463a40006bf.png">
+
 
 ### Game Over:
+This is a portion of our Endscreen class. When you hover your mouse over the broccoli
+<img width="554" alt="Screen Shot 2022-01-11 at 12 04 05 PM" src="https://user-images.githubusercontent.com/90801629/149013498-2e6eca1c-28be-4366-86a4-8f2923d15612.png">
+
+
 
 ## Unique Features of Our Game  
 In the original game, an explosion occurs when you slice the bomb instead of the fruit. When the broccoli is sliced in Dessert Ninja, a gif of Danny Devito walking from an explosion appears as money falls down from the sky above. Here is a reference to the legend himself below: 
