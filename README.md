@@ -44,6 +44,9 @@ One background class was created to duplicate the background from the original f
 # Our Code
 ## Frame:
 
+<img width="715" alt="Screen Shot 2022-01-11 at 12 20 41 PM" src="https://user-images.githubusercontent.com/90801629/149015425-4b9141ba-6911-4a3b-83b9-50bbe4832a40.png">
+
+
 ### Creating Objects:
 This is where we create our objects that are displayed during the game. The wood background, danny devito gif, donut, cupcake, cookie, and broccoli.
 
