@@ -79,6 +79,7 @@ In the original game, an explosion occurs when you slice the bomb instead of the
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
 
 # THANK YOU!
+## xoxo, your favorite #womeninSTEM, bella and jackie <333
 <img src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" width="500" height="400" />
 
 <img src="https://user-images.githubusercontent.com/70665580/148885086-fde60065-cfde-4177-bea9-23cd6132cc1e.JPG" data-canonical-src="https://user-images.githubusercontent.com/70665580/148885086-fde60065-cfde-4177-bea9-23cd6132cc1e.JPG" width="500" height="400" />
