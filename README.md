@@ -44,9 +44,6 @@ One background class was created to duplicate the background from the original f
 # Our Code
 ## Frame:
 
-<img width="715" alt="Screen Shot 2022-01-11 at 12 20 41 PM" src="https://user-images.githubusercontent.com/90801629/149015425-4b9141ba-6911-4a3b-83b9-50bbe4832a40.png">
-
-
 ### Creating Objects:
 This is where we create our objects that are displayed during the game. The wood background, danny devito gif, donut, cupcake, cookie, and broccoli.
 
@@ -61,8 +58,7 @@ This method calls the objects into display.
 #### Scoring:
 This code ensures that if a dessert is not already hovered over, then it will be sliced and the point will increase by one. Hovering over the broccoli, however, does not increase your score. Instead, the score resets to zero and the End Screen appears. 
 
-<img width="724" alt="Screen Shot 2022-01-11 at 12 14 08 PM" src="https://user-images.githubusercontent.com/90801629/149014673-9d790fc5-62fa-437e-b6a6-ad85307b1e29.png">
-
+<img width="724" alt="scoring" src="https://user-images.githubusercontent.com/70665580/149034504-2c7e91d6-3b07-41cc-8162-2c469aaf90f0.png">
 
 ### Collision:
 In all of our dessert classes, we have a similar area of code like the one below. For this cupcake class, if our mouse hovers over the hitbox area, then the cupcake gets sliced. The same goes for all other objects. It is called in the frame class under scoring as we can see above.
