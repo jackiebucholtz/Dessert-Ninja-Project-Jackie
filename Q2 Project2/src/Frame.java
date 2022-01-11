@@ -45,12 +45,11 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	
 	public void paint(Graphics g) {
 		super.paintComponent(g);
-		bg.paint(g);
-		ck.paint(g);
-		dt.paint(g);
-		cp.paint(g);
-		bc.paint(g);
-		//IceCream.paint(g);
+		bg.paint(g); //paints wood background
+		ck.paint(g); //paints cookie object
+		dt.paint(g); //paints donut object
+		cp.paint(g); //paints cupcake object
+		bc.paint(g); //paints broccoli object
 		
 		if(!cp.slice && cp.ifCupClicked(mx, my)) {
 			score++;
@@ -70,6 +69,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 			my = 0;
 		}
 		
+		//if broccoli sliced reset score to 0 and display end screen
 		if(bc.ifBrocClicked(mx, my)) {
 			score = 0;
 			end = true;
@@ -80,7 +80,9 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		//make text
 		g.setColor(Color.white);
 		g.setFont(new Font ("Mistral", Font.PLAIN, 50));
+		//numbers for score
 		g.drawString("" + score, 20, 50);
+		//text for end screen
 		if(end) {
 			bg2.paint(g);
 			g.setFont(new Font ("Impact", Font.PLAIN, 50));
