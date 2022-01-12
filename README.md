@@ -1,6 +1,6 @@
 # Dessert Ninja
 ## Jackie and Bella
-Hey queens!!! This is our perfect, awesome, cool , and bestest project ever. It is similar to Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. We wanted to make the game our own through a sweet spin-off of the objects in the game. In Dessert Ninja, you are collecting all of the delectable sweets, but be sure to refrain from the demise of the broccoli. 
+Hey queens!!! This is our perfect, awesome, and cool game. It is undoubtedly the bestest CSA project ever. It is similar to Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. We wanted to make the game our own through a sweet spin-off of the objects in the game. In Dessert Ninja, you are collecting all of the delectable sweets, but be sure to refrain from the demise of the broccoli. 
 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/70665580/148830971-5280fac4-acbb-464f-9ad2-87bd82053c07.gif)
@@ -85,7 +85,8 @@ For support, reach out to Bella or Jackie! We do not plan on actively updating o
 ### THANK YOU!
 All of our objects were created by ourselves on PixelArt. The background and Danny Devito gif are found on Google. This game was inspired by Fruit Ninja. Thanks to everyone who helped contribute to the success of our game!
 
-### xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333
+### xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333 
+enjoy our #tbt below ;)
 
 <img src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" width="500" height="400" />
 
