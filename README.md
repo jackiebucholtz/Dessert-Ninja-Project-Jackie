@@ -37,7 +37,7 @@ This class is for the broccoli object which if you slice through you lose the ga
 ![Screen_Shot_2022-01-10_at_12 26 29_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838762-44f5ba19-b267-41d1-bd33-f6037e9b423c.png)
 
 ### Background Class:
-One background class was created to duplicate the background from the original fruit ninja game.
+One background class was created to replicate the background from the original fruit ninja game.
 
 ![background class](https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg)
 
