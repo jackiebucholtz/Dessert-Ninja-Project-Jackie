@@ -42,31 +42,30 @@ One background class was created to replicate the background from the original f
 ![background class](https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg)
 
 # Our Code
-## Frame:
 
-### Creating Objects:
+## Creating Objects:
 This is where we create our objects that are displayed during the game. The wood background, danny devito gif, donut, cupcake, cookie, and broccoli.
 
 ![creating objects](https://user-images.githubusercontent.com/70665580/148995453-d45a88e4-74f5-4281-9e6b-4f09b0e92870.png)
 
-### Paint Method:
+## Paint Method:
 This method allows the objects that we created to be displayed in our game. Hence why they are called in the paint method, to paint the objects onto the screen.
 
 <img width="322" alt="Screen Shot 2022-01-11 at 12 12 57 PM" src="https://user-images.githubusercontent.com/90801629/149014378-897e08bb-ddd6-4ff5-8ef1-a7a4114ef084.png">
 
 
-#### Scoring:
+### Scoring:
 This code says that if an object hasn't already been sliced then slice it. When it recognizes that the object has been sliced it adds one point to the score. Slicing the broccoli, however, does not increase your score. Instead, the score resets to zero and displays the End Screen. 
 
 <img width="724" alt="scoring" src="https://user-images.githubusercontent.com/70665580/149034504-2c7e91d6-3b07-41cc-8162-2c469aaf90f0.png">
 
-### Collision:
+## Collision:
 In all of our dessert classes, we have a similar area of code like the one below. For this cupcake class, if our mouse hovers over the hitbox area, then the cupcake gets sliced. The same goes for all other objects. It is called in the frame class under scoring as we can see above.
 
 <img width="629" alt="Screen Shot 2022-01-11 at 12 01 08 PM" src="https://user-images.githubusercontent.com/90801629/149012849-3030f7c8-f676-4bd1-830d-a463a40006bf.png">
 
 
-### Game Over:
+## Game Over:
 This is a portion of our Endscreen class. When you slice the broccoli the score resets to 0 and the end screen displays as well as text that indicates that the game has ended and prompts you to click the screen to play again. This portion of code is how we are able to display the Danny Devito gif.
 
 <img width="554" alt="Screen Shot 2022-01-11 at 12 04 05 PM" src="https://user-images.githubusercontent.com/90801629/149013498-2e6eca1c-28be-4366-86a4-8f2923d15612.png">
