@@ -1,6 +1,6 @@
 # Dessert Ninja
 ## Jackie and Bella
-Hey queens!! This is our perfect, awesome, cool , and bestest project ever. It is a spin off of Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. In Dessert Ninja, you are collecting all of the delectable sweets. Refrain from the demise of the broccoli. 
+Hey queens!! This is our perfect, awesome, cool , and bestest project ever. It is similar to Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. We wanted to make the game our own through a sweet spin-off of the objects in the game. In Dessert Ninja, you are collecting all of the delectable sweets, but be sure to refrain from the demise of the broccoli. 
 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/70665580/148830971-5280fac4-acbb-464f-9ad2-87bd82053c07.gif)
@@ -11,7 +11,7 @@ Hey queens!! This is our perfect, awesome, cool , and bestest project ever. It i
 In order to play Dessert Ninja, you must swipe your mouse across the donut, cupcake, and/or cookie to gain points. Slicing the broccoli equates to an explosion and loss. But do not fear, you are welcome to click the screen and play again!
 
 ### Usage:
-Swipe the mouse across objects.
+Swipe your cursor across objects as they appear on the screen in order to gain points. Each dessert sliced is one point added.
 
 When end screen appears, click mouse to start again.
 
@@ -76,8 +76,16 @@ In the original game, an explosion occurs when you slice the bomb instead of the
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
 
-# THANK YOU!
-xoxo, your favorite #womeninSTEM, bella and jackie <333
+## Support & Roadmap
+For support, reach out to Bella or Jackie! We do not plan on actively updating our game in the future, but do think it would be cool to integrate more objects. One of our initial goals for the project was to create three strikes, one for each time you press the broccoli, to equate to a loss, rather than just one broccoli ending the game. I think that this would ensure that the game could last longer for players.
+
+
+
+# Authors and Acknowledgement
+## THANK YOU!
+All of our objects were created by ourselves on PixelArt. The background and Danny Devito gif are found on Google. This game was inspired by Fruit Ninja. Thanks to everyone who helped contribute to the success of our game!
+
+### xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333
 
 <img src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" width="500" height="400" />
 
