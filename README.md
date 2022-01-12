@@ -77,7 +77,7 @@ In the original game, an explosion occurs when you slice the bomb instead of the
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
 
 ## Support & Roadmap
-For support, reach out to Bella or Jackie! We do not plan on actively updating our game in the future, but do think it would be cool to integrate more objects. One of our initial goals for the project was to create three strikes, one for each time you press the broccoli, to equate to a loss, rather than just one broccoli ending the game. I think that this would ensure that the game could last longer for players.
+For support, reach out to Bella or Jackie (but Mr. David would probably be the most helpful). We do not plan on actively updating our game in the future, but do think it would be cool to integrate a wider variety objects such as new desserts or different vegetables. One of our initial goals for the project was to create three strikes to equate a loss, one for each time you slice the broccoli, rather than just one broccoli ending the game. I think that this would ensure that the game could last longer for players.
 
 
 
