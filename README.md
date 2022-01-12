@@ -1,6 +1,6 @@
 # Dessert Ninja
 ## Jackie and Bella
-Hey queens!! This is our perfect, awesome, cool , and bestest project ever. It is similar to Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. We wanted to make the game our own through a sweet spin-off of the objects in the game. In Dessert Ninja, you are collecting all of the delectable sweets, but be sure to refrain from the demise of the broccoli. 
+Hey queens!!! This is our perfect, awesome, cool , and bestest project ever. It is similar to Fruit Ninja, a video game where fruit is sliced and bombs are dodged in order to win. We wanted to make the game our own through a sweet spin-off of the objects in the game. In Dessert Ninja, you are collecting all of the delectable sweets, but be sure to refrain from the demise of the broccoli. 
 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/70665580/148830971-5280fac4-acbb-464f-9ad2-87bd82053c07.gif)
