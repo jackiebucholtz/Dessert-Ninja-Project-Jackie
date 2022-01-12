@@ -68,6 +68,7 @@ In all of our dessert classes, we have a similar area of code like the one below
 
 ### Game Over:
 This is a portion of our Endscreen class. When you slice the broccoli the score resets to 0 and the end screen displays as well as text that indicates that the game has ended and prompts you to click the screen to play again. This portion of code is how we are able to display the Danny Devito gif.
+
 <img width="554" alt="Screen Shot 2022-01-11 at 12 04 05 PM" src="https://user-images.githubusercontent.com/90801629/149013498-2e6eca1c-28be-4366-86a4-8f2923d15612.png">
 
 
