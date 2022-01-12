@@ -19,27 +19,27 @@ When end screen appears, click mouse to start again.
 ### Donut Class:
 This class is for the donut object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
 
-![Screen_Shot_2022-01-10_at_12 27 07_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148835097-0fe97ab7-3e77-4bb4-a37c-69b050882f72.png)
+<img src="https://user-images.githubusercontent.com/70665580/148835097-0fe97ab7-3e77-4bb4-a37c-69b050882f72.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148835097-0fe97ab7-3e77-4bb4-a37c-69b050882f72.png" width="110" height="100" />
 
 ### Cupcake Class:
 This class is for the cupcake object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
 
-![Screen_Shot_2022-01-10_at_12 27 18_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838570-f3a8345b-053e-461c-969c-73d7577a4dc2.png)
+<img src="https://user-images.githubusercontent.com/70665580/148838570-f3a8345b-053e-461c-969c-73d7577a4dc2.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148838570-f3a8345b-053e-461c-969c-73d7577a4dc2.png" width="100" height="100" />
 
 ### Cookie Class:
 This class is for the cookie object which you slice through to gain points. It was made from Pixilart with our amazing artistic skills. 
 
-![Screen_Shot_2022-01-10_at_12 26 38_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838632-9c285279-4c8c-422d-9422-900f497c8e47.png)
+<img src="https://user-images.githubusercontent.com/70665580/148838632-9c285279-4c8c-422d-9422-900f497c8e47.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148838632-9c285279-4c8c-422d-9422-900f497c8e47.png" width="105" height="100" />
 
 ### Broccoli Class:
 This class is for the broccoli object which if you slice through you lose the game. It was made from Pixilart with our amazing artistic skills. 
 
-![Screen_Shot_2022-01-10_at_12 26 29_PM-removebg-preview](https://user-images.githubusercontent.com/70665580/148838762-44f5ba19-b267-41d1-bd33-f6037e9b423c.png)
+<img src="https://user-images.githubusercontent.com/70665580/148838762-44f5ba19-b267-41d1-bd33-f6037e9b423c.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148838762-44f5ba19-b267-41d1-bd33-f6037e9b423c.png" width="100" height="100" />
 
 ### Background Class:
 One background class was created to replicate the background from the original fruit ninja game.
 
-![background class](https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg)
+<img src="https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg" data-canonical-src="https://user-images.githubusercontent.com/70665580/148842161-12ae5c39-be65-4094-9231-bf881c2216e2.jpeg" width="250" height="200" />
 
 # Our Code
 
