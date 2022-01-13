@@ -76,16 +76,17 @@ In the original game, an explosion occurs when you slice the bomb instead of the
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70665580/148831123-5333fb4e-c2a7-4573-8cf1-31228ba16fe4.gif)
 
+## Video Walk Through
+https://www.loom.com/share/0635cf58f1c943959f554641d93190a3
+
 ## Support & Roadmap
-For support, reach out to Bella or Jackie (but Mr. David would probably be the most helpful). We do not plan on actively updating our game in the future, but do think it would be cool to integrate a wider variety objects such as new desserts or different vegetables. One of our initial goals for the project was to create three strikes to equate a loss, one for each time you slice the broccoli, rather than just one broccoli ending the game. I think that this would ensure that the game could last longer for players.
-
-
+For support, reach out to Bella or Jackie (but Mr. David would probably be the most helpful). We do not plan on actively updating our game in the future, but do think it would be cool to integrate a wider variety objects such as new desserts or different vegetables. One of our initial goals for the project was to create three strikes to equate a loss, one for each dessert that you miss. We think that this would ensure that the game could last longer for players.
 
 ## Authors and Acknowledgement
-### THANK YOU!
 All of our objects were created by ourselves on PixelArt. The background and Danny Devito gif are found on Google. This game was inspired by Fruit Ninja. Thanks to everyone who helped contribute to the success of our game!
 
-### xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333 
+### THANK YOU!
+## xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333 
 enjoy our #tbt below ;)
 
 <img src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" data-canonical-src="https://user-images.githubusercontent.com/70665580/148867856-e2c9c100-db74-41b1-b998-3d7a7040c527.png" width="500" height="400" />
