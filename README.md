@@ -85,6 +85,7 @@ For support, reach out to Bella or Jackie (but Mr. David would probably be the m
 ## Authors and Acknowledgement
 All of our objects were created by ourselves on PixelArt. The background and Danny Devito gif are found on Google. This game was inspired by Fruit Ninja. Thanks to everyone who helped contribute to the success of our game!
 
+
 ### THANK YOU!
 ## xoxo, your favorite #womeninSTEM #compsciqueens #girlbo$$es, bella and jackie <333 
 enjoy our #tbt below ;)
